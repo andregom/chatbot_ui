@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
+:host {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+:host * {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.title-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 25%;
+    right: 75%;
+    top: 0%;
+    bottom: 61.75%;
+    
+    width: 200px;
+    height: 50px;
+
+    background: #eec0e0;
+    border-radius: 50px;
+
+}
+
+.logo::after {
+    content: '';
+    position: relative;
+    z-index: 2;
+    left: 37.67%;
+    right: 37.67%;
+    top: 0%;
+    bottom: 61.75%;
+
+
+    background: #C365A5;
+    border-radius: 50px;
+
+}
+
+.title-bot {
+    color: #B05CB7
+}
+
+.title-container h1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 100px;
+    line-height: 150px;
+
+    color: #5479F7;
+
+    text-shadow: 0px 4px 1px #C099E1;
+}
+
+main {
+    position: relative;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+aside {
+    grid-row: 2;
+    grid-column: 2;
+}
