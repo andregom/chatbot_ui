@@ -40,7 +40,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bolder;
-    font-size: min(max(50px, 6vw), 100px);
+    font-size: min(max(25px, 6vw), 100px);
     line-height: 150px;
 
     color: #5479F7;
@@ -49,6 +49,7 @@
 }
 
 main {
+    min-width: 230px;
     position: relative;
     grid-row: 2;
     grid-column: 1;
@@ -60,10 +61,10 @@ aside {
 }
 
 .side-image {
-    width:100%;
-    height:550px;
-    object-fit: contain;
-    object-position:50% 50%;
+    min-width: 250px;
+    width: 100%;
+    object-fit: fill;
+    object-position: 50% 50%;
 }
 
 .logo-and-title-container {
