@@ -7,6 +7,10 @@ import { UserInitialPageComponent } from './user-initial-page/user-initial-page.
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/admin', pathMatch: 'full'
+  },
+  {
     path: 'admin',
     component: AdministratorPageComponent
   },
